@@ -1,0 +1,95 @@
+
+
+/* 导航栏 */
+.nav{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	z-index: 5;
+}
+.nav_logo{
+	
+	width: 120px;
+	height: 0.5rem;
+	text-align: center;
+	line-height: 0.5rem;
+	color: #a4eaa4;
+	font-weight: 600;
+	font-size: 27px;
+	text-shadow: 3px 1px 2px #000;
+	transform: scale(0.6,1.1);
+	float: left;
+}
+.nav_introduce li{
+	float: left;
+	line-height: 0.5rem;
+	font-size: 0.14rem;
+	color: #fff;
+	margin-left: 0.1rem;
+}
+.nav_introduce li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+}
+.nav_introduce li:hover{
+	background-color: rgba(105, 102, 91, 0.64);
+}
+
+
+
+.one{
+	background: url(../images/bgone.jpg) no-repeat center/cover;
+}
+/* @keyframes opacitys{
+	0%{
+		background-color: rgba(0,0,1);
+	}
+
+	100%{
+		background-color: rgba(0,0,0,1);
+	}
+} */
+.one_shade{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	z-index: 6;
+	/*animation: opacitys 7s linear infinite;/* 7  11 */*/
+}
+/* .animation_opacity{
+	animation-name: opacity;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+} */
+
+
+.one_movie{
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.two{
+	background-color: #8888f7;
+	background: url(../images/bgtwo.jpg) no-repeat center/cover;
+}
+
+.three{
+	background-color: #87f787;
+	background: url(../images/bgthree.jpg) no-repeat center/cover;
+}
+
+.four{
+	background-color: #fbe2e6;
+	background: url(../images/bgfour.jpg) no-repeat center/cover;
+}
+
+.five{
+	background-color: #b4dcec;
+	background: url(../images/bgfive.jpg) no-repeat center/cover;
+}
+

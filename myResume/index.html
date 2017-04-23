@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的简历</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/bass.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"> 
+
+
+		<!-- 导入插件 -->
+	<script type="text/javascript" src='js/jquery-3.0.0.min.js'></script>
+	<script type="text/javascript" src='js/jquery.fullPage.min.js'></script>
+
+	<script type="text/javascript">
+		$(function(){
+    		$('#dowebok').fullpage({
+				anchors:['onOne','onTwo','onThree','onFour','onFive'],
+				menu: '#myMenu',
+				navigation:true,
+				navigationTooltips:['基本资料','专业技能','工作经历','项目经验','自我评价'],
+    		});
+
+    		/*fullpage下video自动播放*/
+    		$('.one_movie')[0].play();
+
+		});
+	</script>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="nav">
+		<div class="w">
+			<div class="nav_logo">TigerFellFlute</div>
+			<ul class="nav_introduce fr" id="myMenu">
+				<li data-menuanchor="onOne"><a href="#onOne"><span>基本资料</span></a></li>
+				<li data-menuanchor="onTwo"><a href="#onTwo"><span>专业技能</span></a></li>
+				<li data-menuanchor="onThree"><a href="#onThree"><span>工作经历</span></a></li>
+				<li data-menuanchor="onFour"><a href="#onFour"><span>项目经验</span></a></li>
+				<li data-menuanchor="onFive"><a href="#onFive"><span>自我评价</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 主体 -->
+	<div id="dowebok">
+    	<div class="section one">
+    		<div class="one_shade"></div>
+    		<video class='one_movie' loop autoplay="autoplay" >
+    			<source src="movie/movie3.mp4" type="video/mp4" />
+    		</video><!-- loop -->
+    	</div>
+    	<div class="section two">
+    	    <h3>第二屏</h3>
+    	</div>
+    	<div class="section three">
+    	    <h3>第三屏</h3>
+    	</div>
+    	<div class="section four">
+    	    <h3>第四屏</h3>
+    	</div>
+    	<div class="section five">
+    	    <h3>第五屏</h3>
+    	</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
